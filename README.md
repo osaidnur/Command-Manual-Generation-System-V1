@@ -45,8 +45,8 @@ This repository contains a Shell script that implements a command manual generat
 ## Important Note
 
 - **Running the script**: To run the script, use the following syntax:
-                          `bash <file_name.sh> option`
-- For example, to generate manuals for the commands, run:
+                          `bash <file_name.sh> <option>`
+- **For example**, to generate manuals for the commands, run:
                           `bash OsaidNur_1210733.sh generate`
   
 
