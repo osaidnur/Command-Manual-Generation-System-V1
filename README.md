@@ -1,20 +1,23 @@
 # Command-Manual-Generation-System
 
-This repository contains a Python program that implements a command manual generation system. The project handles documentation for 20 selected commands, with the following main functionalities:
+This repository contains a Shell script that implements a command manual generation system. The project creates documentation for 20 selected Linux commands, with the following main functionalities:
 
 ## Key Features
 
 1. **Command Manual Generation**: 
-   - Generates an XML file (`Commands.xml`) containing manuals for 20 predefined Linux commands.
+   - Creates 20 individual text files, each documenting one of the selected Linux commands.
    
 2. **Command Manual Verification**:
-   - Verifies the integrity of the generated manuals by checking if they change after a specific time period.
+   - Verifies the existence and content of the generated command files.
    
 3. **Search Functionality**:
-   - Allows users to search for any command and view detailed information about it.
+   - Allows users to search for any command and view its manual content if available.
 
 4. **Command Suggestion (Recommendation)**:
    - Recommends related commands based on similar functionality or name.
+
+5. **Command Removal**:
+   - Deletes the generated manual files for the commands.
 
 ## Commands Covered
 
@@ -39,10 +42,11 @@ This repository contains a Python program that implements a command manual gener
 - `date` – Display or set the system date and time
 - `ps` – Report the current processes running on the system
 
-## Important Notes
+## Important Note
 
-- **Command Manual Generation**: This operation requires the existence of the `commands.txt` file, which contains the names of the 20 predefined commands. Ensure that this file is properly generated before running the generation process.
+- **Running the script**: To run the script, use the following syntax:
+  > `bash <file_name.sh>` <option>
 
-- **Command Manual Verification**: This operation checks the integrity of the generated manuals by verifying the `Commands.xml` file, which holds the command manuals. Ensure to generate the command manuals first, as the verification process depends on the `Commands.xml` file being present and up to date.
+
   
 
